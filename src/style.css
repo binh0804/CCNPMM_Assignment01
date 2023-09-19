@@ -1,0 +1,100 @@
+section#section {
+  border: 1px solid #808080;
+  width: 60vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  width: 100%;
+  padding-right: 0.5rem;
+}
+
+div#refresh {
+  padding-right: 0.25rem;
+}
+
+button.text-btn {
+  border: none;
+  background: none;
+}
+
+div.title,
+div.form-text,
+li.checkbox,
+button.clear {
+  border: 1px solid #80808021;
+  padding: 0.5rem 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  /* thêm màu, bóng, hiệu ứng*/
+  background-color: #80808021;
+  box-shadow: 0 0 5px #80808021;
+  transition: all 0.5s;
+  /*Thêm màu gradient xanh vàng*/
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+span.inputs {
+  display: flex;
+  width: 100%;
+}
+
+input[type='text'] {
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+input:checked + input {
+  text-decoration: line-through;
+  color: #ccc;
+  font-style: italic;
+}
+
+.new,
+.form-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.list li:nth-child(2n + 1) {
+  background-color: #eee;
+}
+
+button.clear {
+  background-color: #808080;
+}
+
+img {
+  width: 3vw;
+}
+
+.title p {
+  padding-left: 0.5rem;
+  /* Thêm màu cho chữ gradient màu tươi sáng, đổ bóng, kích thước to */
+  color: #f00;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #fff;
+  /* Thêm hiệu ứng chữ di chuyển */
+  animation: move 1s infinite;
+  /*font chữ đẹp, in đậm*/
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  /*Căn giữa */
+  text-align: center;
+}
+
+p.error-message {
+  color: #f00;
+  display: none;
+  border: solid;
+}
